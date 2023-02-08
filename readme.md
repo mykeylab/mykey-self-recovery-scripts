@@ -10,7 +10,7 @@
 2. 调用transfer脚本，将MYKEY中的资产转到其他账户
 - ETH链
     根据token类型，分别使用 eth-transfer.js 或者 eth-transfer-erc20.js
-    创建配置文件.env，参考 .env.eth.transfer.sample
+    创建配置文件.env，参考 [.env.eth.transfer.sample](https://github.com/mykeylab/mykey-self-recovery-scripts/blob/master/.env.eth.transfer.sample)。
     ```
     PostmanPrivateKey，   Postman账户的私钥, 是可以用于支付链上Gas或者资源的账号的私钥
     AssetkeyPrivateKey，  步骤1中导出的操作密钥 
@@ -22,7 +22,7 @@
     
 - EOS链
     使用 eos-transfer.js 脚本
-    创建配置文件.env，参考 .env.eos.transfer.sample
+    创建配置文件.env，参考 [.env.eos.transfer.sample](https://github.com/mykeylab/mykey-self-recovery-scripts/blob/master/.env.eos.transfer.sample)
     ```
     PostmanAccount,   Postman账户的地址 
     PostmanPrivateKey,    Postman账户的私钥
@@ -44,7 +44,7 @@
 - ETH链
 提前生成新的操作密钥，本地保存好密钥的备份。 密钥的生成，参考 https://ethereum.org/en/developers/docs/accounts/#account-creation
 使用 eth-changeAllOperationKeys.js 脚本进行链上更新。
-创建配置文件.env，参考 .env.eth.OperationKeys.sample
+创建配置文件.env，参考 [.env.eth.OperationKeys.sample](https://github.com/mykeylab/mykey-self-recovery-scripts/blob/master/.env.eth.OperationKeys.sample)
     ```
     PostmanPrivateKey，   Postman账户的私钥
     AdminkeyPrivateKey，  步骤1中导出的管理密钥
@@ -55,7 +55,7 @@
 - EOS链
 提前生成新的操作密钥，本地保存好密钥的备份。密钥的生成，参考 https://eosauthority.com/blog/How_to_generate_EOS_private_and_public_key_pairs
 使用 eos-changeAllOperationKeys.js 脚本进行链上更新。
-创建配置文件.env，参考 .env.eos.OperationKeys.sample
+创建配置文件.env，参考 [.env.eos.OperationKeys.sample](https://github.com/mykeylab/mykey-self-recovery-scripts/blob/master/.env.eos.OperationKeys.sample)
     ```
     PostmanAccount，      Postman账户的地址
     PostmanPrivateKey，   Postman账户的私钥
