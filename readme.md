@@ -14,7 +14,7 @@
     ```
     PostmanPrivateKey，   Postman账户的私钥, 是可以用于支付链上Gas或者资源的账号的私钥
     AssetkeyPrivateKey，  步骤1中导出的操作密钥 
-    MykeyAccountAddress， MYKEY账户的地址
+    MykeyAccountAddress， MYKEY账户ETH地址
     ToAccountAddress，    转账的目标账户的地址
     TokenAddress，        ERC20合约地址（ETH不需要该配置）
     ```
@@ -26,7 +26,7 @@
     ```
     PostmanAccount,   Postman账户的地址 
     PostmanPrivateKey,    Postman账户的私钥
-    MykeyAccount，     MYKEY账户的地址
+    MykeyAccount，     MYKEY账户EOS地址
     AssetkeyPrivateKey,   步骤1中导出的操作密钥 
     ToAccount，       转账的目标账户的地址
     TokenAccount,     Token合约账户，比如EOS是eosio.token
@@ -39,7 +39,7 @@
 
 
 2. 修改操作密钥
-修改操作密钥，需要等待7天，并通过步骤3发送触发交易。
+修改操作密钥，需要等待7天。到期后按照步骤三发送触发交易后, 新的操作密钥才会生效。
 
 - ETH链
 提前生成新的操作密钥，本地保存好密钥的备份。 密钥的生成，参考 https://ethereum.org/en/developers/docs/accounts/#account-creation
@@ -48,7 +48,7 @@
     ```
     PostmanPrivateKey，   Postman账户的私钥
     AdminkeyPrivateKey，  步骤1中导出的管理密钥
-    MykeyAccountAddress， MYKEY账户的地址
+    MykeyAccountAddress， MYKEY账户ETH地址
     NewOperatorKey，      新的操作密钥
     ```
 
@@ -61,7 +61,7 @@
     PostmanPrivateKey，   Postman账户的私钥
     MykeyAccount，        MYKEY账户的地址
     AdminkeyPrivateKey，  步骤1中导出的管理密钥
-    MykeyAccountAddress， MYKEY账户的地址
+    MykeyAccountAddress， MYKEY账户EOS地址
     NewOperatorKey，      新的操作密钥
     ```
     
